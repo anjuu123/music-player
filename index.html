@@ -9,10 +9,24 @@
 <body>
     <div class ="player">
         <img src="headphone.svg" alt="headphone img"/>
-        <audio id="player" controls>
-            <source id="source" src="songs/bensound-glitchfidelity.mp3"/>
+        <audio id="player">
+            <source id="source"/>
             Audio not supported
         </audio>
+
+        <div id="controls">
+            <p id=""currentsSong></p>
+            <div class="controls_wrapper">
+                <span>&#9658</span>
+                <span>&#10074;&#10074</span>
+            </div>
+            <p>Volume:</p>
+            <div class="volume">
+                <span>-<</span>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.01">
+                <span>+</span>
+            </div>
+        </div>
 
         <h2>My Songs:</h2>
         <div id=""songList>
