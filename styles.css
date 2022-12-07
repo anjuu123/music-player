@@ -6,7 +6,7 @@ html{
 }
 
 body{
-    background: linear-gradient(#5b49c0, #2b2b2b);
+    background: linear-gradient(#000001, #2b2b2b);
     min-height: 100vh;
     color: whitesmoke;
     font-size: 1.4rem;
@@ -17,7 +17,7 @@ body{
 }
 
 .player{
-    background: radial-gradient(#b42f8c, #4f3341);
+    background: radial-gradient(#20d055, #03510f);
     padding:2rem;
     border-radius: 2rem;
 }
@@ -56,7 +56,7 @@ li{
 }
 
 li:hover{
-    background: #f3644b;
+    background: #e71143;
 }
 a {
     color: whitesmoke;
