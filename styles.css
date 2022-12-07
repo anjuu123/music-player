@@ -1,6 +1,7 @@
 html{
     font-size: 10px;
     font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
 
 }
 
@@ -64,6 +65,26 @@ progress {
     width: 100%;
     margin-bottom: 1rem;
 }
+
+.pulse {
+    animation: pulse;
+    animation-duration: 0.4s;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 @media(min-width:800px){
     body{
 max-width: 60vw;

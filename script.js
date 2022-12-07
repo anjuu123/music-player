@@ -25,6 +25,8 @@ const songList = document.getElementById("songList");
 songList.appendChild(createSongList());
 
 songList.onclick = function (e) {
+  document.querySelector('#headphone').classList.remove("pulse")
+
   const source = document.getElementById("source");
   source.src = "songs/" + e.target.innerText;
   document.querySelector(
@@ -33,6 +35,8 @@ songList.onclick = function (e) {
  
   player.load();
   player.play();
+
+  document.querySelector('#headphone').classList.add("pulse")
 };
 
 
