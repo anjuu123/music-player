@@ -54,6 +54,10 @@ slider.oninput = function(e) {
 }
 
 function updateProgress() {
-  const progressBar = document.getElementById('progress')
+  if(player.currentTime > 0) {
+    const progressBar = document.getElementById('progress')
   progressBar.value = (player.currentTime / player.duration)*100;
+
+  }
+  
 }
