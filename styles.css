@@ -6,7 +6,7 @@ html{
 }
 
 body{
-    background: linear-gradient(#3b3b3b, #2b2b2b);
+    background: linear-gradient(#5b49c0, #2b2b2b);
     min-height: 100vh;
     color: whitesmoke;
     font-size: 1.4rem;
@@ -17,13 +17,15 @@ body{
 }
 
 .player{
-    background: radial-gradient(#211e24, #4f3341);
+    background: radial-gradient(#b42f8c, #4f3341);
     padding:2rem;
     border-radius: 2rem;
 }
 
 img{
     width: 50%;
+    height: 25rem;
+   
 }
 
 #controls{
