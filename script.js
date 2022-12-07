@@ -24,7 +24,12 @@ function createSongList() {
 const songList = document.getElementById("songList");
 songList.appendChild(createSongList());
 
-songList.onclick = function (e) {
+const links = document.querySelectorAll('li')
+for(const link of links) {
+  link.addEventListener("click" , setSong)
+}
+
+function setSong (e) {
   document.querySelector('#headphone').classList.remove("pulse")
 
   const source = document.getElementById("source");
